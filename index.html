@@ -1,13 +1,295 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ticod</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information Quantique et Cybersécurité - USTO-MB</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <h1 class="nav-title">Information Quantique</h1>
+            <button id="menu-toggle" class="menu-toggle">☰</button>
+            <ul id="nav-menu" class="nav-menu">
+                <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                <li><a href="#qubit" class="nav-link">Le Qubit</a></li>
+                <li><a href="#menaces" class="nav-link">Menaces</a></li>
+                <li><a href="#crypto-quantique" class="nav-link">Crypto Quantique</a></li>
+                <li><a href="#post-quantique" class="nav-link">Post-Quantique</a></li>
+                <li><a href="#vie-privee" class="nav-link">Vie Privée</a></li>
+                <li><a href="#synthese" class="nav-link">Synthèse</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <div class="badge">Projet de Recherche Académique 2025-2026</div>
+            <h1 class="hero-title">
+                Information Quantique et<br/>
+                <span class="gradient-text">Révolution de la Cybersécurité</span>
+            </h1>
+            <div class="divider"></div>
+            <p class="hero-subtitle">Université des Sciences et de la Technologie d'Oran Mohamed Boudiaf</p>
+            <p class="hero-text">Module : Théorie de l'Information et du Codage<br/>3ème Année Ingénieur en Sécurité Informatique</p>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="intro">
+        <div class="container">
+            <h2 class="section-title gradient-text">Le Défi de l'Ère Quantique</h2>
+            <div class="intro-content">
+                <p>L'<strong>informatique quantique</strong> représente une rupture technologique majeure qui bouleverse les fondements de la cybersécurité moderne. En exploitant les propriétés de la mécanique quantique — <strong>superposition</strong> et <strong>intrication</strong> — les ordinateurs quantiques peuvent résoudre certains problèmes mathématiques de manière exponentiellement plus rapide.</p>
+                <p>Cette puissance exceptionnelle constitue à la fois une <strong class="text-success">opportunité révolutionnaire</strong> pour la science et une <strong class="text-danger">menace existentielle</strong> pour la sécurité de nos communications actuelles.</p>
+            </div>
+            <div class="cards-grid">
+                <div class="info-card danger">
+                    <h3>⚠️ La Menace</h3>
+                    <p>RSA, ECC et Diffie-Hellman seront brisés par l'algorithme de Shor</p>
+                </div>
+                <div class="info-card success">
+                    <h3>🔐 Les Solutions</h3>
+                    <p>Cryptographie quantique (BB84) et post-quantique (NIST/ENISA)</p>
+                </div>
+                <div class="info-card warning">
+                    <h3>⏰ L'Urgence</h3>
+                    <p>"Harvest Now, Decrypt Later" - La menace est déjà active</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sous-thèmes Cards -->
+    <section class="themes">
+        <div class="container">
+            <h2 class="section-title gradient-text">Explorez les Sous-Thèmes</h2>
+            <p class="section-subtitle">Cliquez pour accéder au contenu complet de chaque étudiant</p>
+            
+            <div class="theme-cards">
+                <!-- Qubit -->
+                <div class="theme-card cyan" data-theme="qubit">
+                    <div class="card-header">
+                        <span class="icon">📖</span>
+                        <span class="author">Hicham Abdelkadous</span>
+                    </div>
+                    <h3>Le Qubit et la Sécurité</h3>
+                    <p>Fondements quantiques : superposition, intrication, sphère de Bloch</p>
+                    <div class="card-arrow">→ Accéder</div>
+                    <div class="tags">
+                        <span>Superposition</span>
+                        <span>Bloch</span>
+                        <span>Intrication</span>
+                    </div>
+                </div>
+
+                <!-- Menaces -->
+                <div class="theme-card red" data-theme="menaces">
+                    <div class="card-header">
+                        <span class="icon">⚠️</span>
+                        <span class="author">Imane BAOUCHI</span>
+                    </div>
+                    <h3>Les Menaces Quantiques</h3>
+                    <p>Algorithme de Shor, équation de Mosca, "Harvest Now Decrypt Later"</p>
+                    <div class="card-arrow">→ Accéder</div>
+                    <div class="tags">
+                        <span>Shor</span>
+                        <span>QFT</span>
+                        <span>Mosca</span>
+                    </div>
+                </div>
+
+                <!-- Crypto Quantique -->
+                <div class="theme-card green" data-theme="crypto-quantique">
+                    <div class="card-header">
+                        <span class="icon">🔐</span>
+                        <span class="author">Meriem Djellid</span>
+                    </div>
+                    <h3>Cryptographie Quantique</h3>
+                    <p>Protocole BB84, polarisation des photons, théorie de Shannon</p>
+                    <div class="card-arrow">→ Accéder</div>
+                    <div class="tags">
+                        <span>BB84</span>
+                        <span>Shannon</span>
+                        <span>Photons</span>
+                    </div>
+                </div>
+
+                <!-- Post-Quantique -->
+                <div class="theme-card purple" data-theme="post-quantique">
+                    <div class="card-header">
+                        <span class="icon">🛡️</span>
+                        <span class="author">Razane Siguerdidjane</span>
+                    </div>
+                    <h3>Solutions Post-Quantiques</h3>
+                    <p>Standards NIST/ENISA, familles d'algorithmes, transition crypto-agile</p>
+                    <div class="card-arrow">→ Accéder</div>
+                    <div class="tags">
+                        <span>NIST</span>
+                        <span>Kyber</span>
+                        <span>Dilithium</span>
+                    </div>
+                </div>
+
+                <!-- Vie Privée -->
+                <div class="theme-card orange" data-theme="vie-privee">
+                    <div class="card-header">
+                        <span class="icon">👥</span>
+                        <span class="author">Alaa Madaoui</span>
+                    </div>
+                    <h3>Impacts sur la Vie Privée</h3>
+                    <p>Conséquences sociales, économiques et éthiques de l'informatique quantique</p>
+                    <div class="card-arrow">→ Accéder</div>
+                    <div class="tags">
+                        <span>RGPD</span>
+                        <span>Éthique</span>
+                        <span>Société</span>
+                    </div>
+                </div>
+
+                <!-- Synthèse -->
+                <div class="theme-card indigo" data-theme="synthese">
+                    <div class="card-header">
+                        <span class="icon">⚡</span>
+                        <span class="author">Conclusion</span>
+                    </div>
+                    <h3>Synthèse et Perspectives</h3>
+                    <p>Vue d'ensemble du projet, bibliographie complète et perspectives d'avenir</p>
+                    <div class="card-arrow">→ Accéder</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenu détaillé (simplifié pour exemple) -->
+    <section id="qubit" class="content-section">
+        <div class="container">
+            <h2 class="section-title">Le Qubit et son Rôle dans la Sécurité Informatique</h2>
+            <p class="author-credit">Par Hicham Abdelkadous</p>
+            
+            <div class="content-box">
+                <h3>Introduction</h3>
+                <p>L'information quantique est une branche émergente de la science qui combine la physique quantique et la théorie de l'information. Elle introduit le concept de <strong>qubit (Quantum Bit)</strong>, une unité d'information capable de représenter plusieurs états simultanément.</p>
+            </div>
+
+            <div class="image-placeholder">
+                <span class="placeholder-icon">📷</span>
+                <p class="placeholder-title">Représentation d'un Qubit en Superposition</p>
+                <p class="placeholder-desc">Insérer une image montrant la différence entre bit classique et qubit</p>
+            </div>
+
+            <div class="content-box">
+                <h3>État de superposition</h3>
+                <div class="formula">|ψ⟩ = α|0⟩ + β|1⟩</div>
+                <p>avec |α|² + |β|² = 1</p>
+                <p>Le qubit représente les deux valeurs en même temps, jusqu'à ce qu'il soit mesuré.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="menaces" class="content-section">
+        <div class="container">
+            <h2 class="section-title">Les Menaces Quantiques sur la Cryptographie Classique</h2>
+            <p class="author-credit">Par Imane BAOUCHI</p>
+            
+            <div class="content-box">
+                <h3>L'Algorithme de Shor (1994)</h3>
+                <p>Shor a montré qu'un ordinateur quantique pouvait factoriser un grand nombre N en un temps polynomial, alors que les ordinateurs classiques nécessitent un temps exponentiel.</p>
+            </div>
+
+            <div class="alert danger">
+                <strong>🚨 "Harvest Now, Decrypt Later"</strong>
+                <p>Les attaquants enregistrent MAINTENANT les communications pour les déchiffrer plus tard. Cette menace est DÉJÀ ACTIVE.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="crypto-quantique" class="content-section">
+        <div class="container">
+            <h2 class="section-title">La Cryptographie Quantique</h2>
+            <p class="author-credit">Par Meriem Djellid</p>
+            
+            <div class="content-box">
+                <h3>Protocole BB84 (1984)</h3>
+                <p>Le protocole BB84, proposé par Charles Bennett et Gilles Brassard en 1984, est le premier protocole de Distribution Quantique de Clé (QKD).</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="post-quantique" class="content-section">
+        <div class="container">
+            <h2 class="section-title">Solutions Post-Quantiques</h2>
+            <p class="author-credit">Par Razane Siguerdidjane</p>
+            
+            <div class="grid-2">
+                <div class="algo-card">
+                    <h4>🔷 Réseaux Euclidiens</h4>
+                    <p><strong>Algorithmes:</strong> CRYSTALS-Kyber, Dilithium</p>
+                    <span class="badge-success">✅ Standardisé NIST 2022</span>
+                </div>
+                <div class="algo-card">
+                    <h4>📊 Codes Correcteurs</h4>
+                    <p><strong>Algorithme:</strong> Classic McEliece</p>
+                    <span class="badge-warning">⚠️ Clés volumineuses</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="vie-privee" class="content-section">
+        <div class="container">
+            <h2 class="section-title">Impacts sur la Vie Privée</h2>
+            <p class="author-credit">Par Alaa Madaoui</p>
+            
+            <div class="grid-3">
+                <div class="impact-card">
+                    <h4>📧 Communications</h4>
+                    <p>Emails, messageries instantanées vulnérables</p>
+                </div>
+                <div class="impact-card">
+                    <h4>🏥 Données Médicales</h4>
+                    <p>Dossiers patients exposés</p>
+                </div>
+                <div class="impact-card">
+                    <h4>💳 Finance</h4>
+                    <p>Transactions compromises</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="synthese" class="content-section synthese">
+        <div class="container">
+            <h2 class="section-title gradient-text">Synthèse et Perspectives</h2>
+            
+            <div class="conclusion-box">
+                <p>L'informatique quantique marque une <strong>révolution scientifique</strong> qui bouleverse les fondements de la cybersécurité. La migration vers la cryptographie post-quantique ne peut plus être repoussée.</p>
+            </div>
+
+            <h3>📚 Bibliographie</h3>
+            <ul class="biblio">
+                <li><strong>Shor, P. W. (1994).</strong> Algorithms for quantum computation. IEEE.</li>
+                <li><strong>Mosca, M. (2018).</strong> Cybersecurity in an Era with Quantum Computers. IEEE Security & Privacy.</li>
+                <li><strong>NIST (2023).</strong> Post-Quantum Cryptography Standardization Project.</li>
+                <li><strong>ENISA (2022).</strong> Post-Quantum Cryptography: Current State and Quantum Readiness.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p><strong>Projet Académique</strong> • Module : Théorie de l'Information et du Codage</p>
+            <p>Université des Sciences et de la Technologie d'Oran Mohamed Boudiaf (USTO-MB)</p>
+            <p class="credits">Imane BAOUCHI • Alaa Madaoui • Hicham Abdelkadous • Meriem Djellid • Razane Siguerdidjane</p>
+            <p class="copyright">© 2025-2026 USTO-MB</p>
+        </div>
+    </footer>
+
+</body>
 </html>
